@@ -10,11 +10,10 @@ fetch('data/figures.json')
 
             container.innerHTML += `
                 <div class="card ${possessionClass}">
-                    <img src="${fig.image}" alt="${fig.nom}">
+                    <img src="${fig.image}" alt="${fig.nom}" class="figure-image">
                     <h3>${fig.nom}</h3>
                     <p>Année : ${fig.annee}</p>
                     <p>Série : ${fig.serie}</p>
-                    <p>BAF : ${fig.BAF}</p>
                     <p><strong>Prix :</strong> ${fig.prix} €</p>
                     <p class="owner-status">${ownerText}</p>
                 </div>
@@ -38,11 +37,10 @@ function searchFigures() {
 
                     container.innerHTML += `
                         <div class="card ${possessionClass}">
-                            <img src="${fig.image}" alt="${fig.nom}">
+                            <img src="${fig.image}" alt="${fig.nom}" class="figure-image">
                             <h3>${fig.nom}</h3>
                             <p>Année : ${fig.annee}</p>
                             <p>Série : ${fig.serie}</p>
-                            <p>BAF : ${fig.BAF}</p>
                             <p><strong>Prix :</strong> ${fig.prix} €</p>
                             <p class="owner-status">${ownerText}</p>
                         </div>
