@@ -5,7 +5,7 @@
       "annee": 2024,
       "serie": "Avengers",
       "exclusivite": "Non",
-      "prix" : 0.0,
+      "prix": 0.0,
       "image": "images/vision_void.jpg"
     },
     {
@@ -14,7 +14,7 @@
       "annee": 2022,
       "serie": "Avengers",
       "exclusivite": "Non",
-      "prix" : 0.0,
+      "prix": 0.0,
       "image": "images/namor_void.jpg"
     }
   ]
