@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "nom": "Vision",
+      "annee": 2024,
+      "serie": "Avengers",
+      "exclusivite": "Non",
+      "image": "images/vision_void.jpg"
+    },
+    {
+      "id": 2,
+      "nom": "Namor",
+      "annee": 2022,
+      "serie": "Avengers",
+      "exclusivite": "Non",
+      "image": "images/namor_void.jpg"
+    }
+  ]
+  
