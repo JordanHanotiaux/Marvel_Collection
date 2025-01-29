@@ -3,30 +3,30 @@
       "id": 1,
       "nom": "Vision",
       "annee": 2024,
-      "serie": "The Void",
-      "exclusivite": "Non",
+      "serie": "Avengers",
       "prix": 0.0,
       "BAF": "The Void",
+      "owner": "YES",
       "image": "images/vision_void.jpg"
     },
     {
       "id": 2,
       "nom": "Namor",
       "annee": 2024,
-      "serie": "The Void",
-      "exclusivite": "Non",
+      "serie": "Avengers",
       "prix": 0.0,
       "BAF": "The Void",
+      "owner": "YES",
       "image": "images/namor_void.jpg"
     },
     {
       "id": 3,
       "nom": "The Void",
       "annee": 2024,
-      "serie": "The Void",
-      "exclusivite": "Non",
+      "serie": "Avengers",
       "prix": 0.0,
-      "BAF": "YES",
+      "BAF": "The Void",
+      "owner": "NO",
       "image": "images/void.jpg"
     }
   ]

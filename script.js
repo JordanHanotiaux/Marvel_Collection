@@ -5,13 +5,18 @@ fetch('data/figures.json')
         const container = document.getElementById('figures-container');
         container.innerHTML = "";
         data.forEach(fig => {
+            const possessionClass = fig.owner === "YES" ? "owned" : "not-owned";
+            const ownerText = fig.owner === "YES" ? "Disponible" : "Non disponible";
+
             container.innerHTML += `
-                <div class="card">
+                <div class="card ${possessionClass}">
                     <img src="${fig.image}" alt="${fig.nom}">
                     <h3>${fig.nom}</h3>
                     <p>Année : ${fig.annee}</p>
                     <p>Série : ${fig.serie}</p>
+                    <p>BAF : ${fig.BAF}</p>
                     <p><strong>Prix :</strong> ${fig.prix} €</p>
+                    <p class="owner-status">${ownerText}</p>
                 </div>
             `;
         });
@@ -28,13 +33,18 @@ function searchFigures() {
             container.innerHTML = "";
             data.filter(fig => fig.nom.toLowerCase().includes(input))
                 .forEach(fig => {
+                    const possessionClass = fig.owner === "YES" ? "owned" : "not-owned";
+                    const ownerText = fig.owner === "YES" ? "Disponible" : "Non disponible";
+
                     container.innerHTML += `
-                        <div class="card">
+                        <div class="card ${possessionClass}">
                             <img src="${fig.image}" alt="${fig.nom}">
                             <h3>${fig.nom}</h3>
                             <p>Année : ${fig.annee}</p>
                             <p>Série : ${fig.serie}</p>
+                            <p>BAF : ${fig.BAF}</p>
                             <p><strong>Prix :</strong> ${fig.prix} €</p>
+                            <p class="owner-status">${ownerText}</p>
                         </div>
                     `;
                 });
