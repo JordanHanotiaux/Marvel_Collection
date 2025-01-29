@@ -11,6 +11,7 @@ fetch('data/figures.json')
                     <h3>${fig.nom}</h3>
                     <p>Année : ${fig.annee}</p>
                     <p>Série : ${fig.serie}</p>
+                    <p>Prix : ${fig.prix}</p>
                 </div>
             `;
         });
@@ -33,6 +34,7 @@ function searchFigures() {
                             <h3>${fig.nom}</h3>
                             <p>Année : ${fig.annee}</p>
                             <p>Série : ${fig.serie}</p>
+                            <p>Prix : ${fig.prix}</p>
                         </div>
                     `;
                 });
