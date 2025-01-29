@@ -4,10 +4,7 @@ fetch('data/figures.json')
     .then(data => {
         const container = document.getElementById('figures-container');
         container.innerHTML = "";
-
         data.forEach(fig => {
-            let bafInfo = fig.BAF ? `<p><strong>BAF :</strong> <a href="baf-details.html?baf=${fig.BAF}">${fig.BAF}</a></p>` : "";
-
             container.innerHTML += `
                 <div class="card">
                     <img src="${fig.image}" alt="${fig.nom}">
@@ -15,7 +12,6 @@ fetch('data/figures.json')
                     <p>Année : ${fig.annee}</p>
                     <p>Série : ${fig.serie}</p>
                     <p><strong>Prix :</strong> ${fig.prix} €</p>
-                    ${bafInfo}
                 </div>
             `;
         });
@@ -32,8 +28,6 @@ function searchFigures() {
             container.innerHTML = "";
             data.filter(fig => fig.nom.toLowerCase().includes(input))
                 .forEach(fig => {
-                    let bafInfo = fig.BAF ? `<p><strong>BAF :</strong> <a href="baf-details.html?baf=${fig.BAF}">${fig.BAF}</a></p>` : "";
-
                     container.innerHTML += `
                         <div class="card">
                             <img src="${fig.image}" alt="${fig.nom}">
@@ -41,7 +35,6 @@ function searchFigures() {
                             <p>Année : ${fig.annee}</p>
                             <p>Série : ${fig.serie}</p>
                             <p><strong>Prix :</strong> ${fig.prix} €</p>
-                            ${bafInfo}
                         </div>
                     `;
                 });
