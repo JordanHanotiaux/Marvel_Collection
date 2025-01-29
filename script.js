@@ -6,7 +6,6 @@ fetch('data/figures.json')
         container.innerHTML = "";
         data.forEach(fig => {
             const possessionClass = fig.owner === "YES" ? "owned" : "not-owned";
-            const ownerText = fig.owner === "YES" ? "Disponible" : "Non disponible";
 
             container.innerHTML += `
                 <div class="card ${possessionClass}">
@@ -15,7 +14,6 @@ fetch('data/figures.json')
                     <p>Année : ${fig.annee}</p>
                     <p>Série : ${fig.serie}</p>
                     <p><strong>Prix :</strong> ${fig.prix} €</p>
-                    <p class="owner-status">${ownerText}</p>
                 </div>
             `;
         });
@@ -33,7 +31,6 @@ function searchFigures() {
             data.filter(fig => fig.nom.toLowerCase().includes(input))
                 .forEach(fig => {
                     const possessionClass = fig.owner === "YES" ? "owned" : "not-owned";
-                    const ownerText = fig.owner === "YES" ? "Disponible" : "Non disponible";
 
                     container.innerHTML += `
                         <div class="card ${possessionClass}">
@@ -42,7 +39,6 @@ function searchFigures() {
                             <p>Année : ${fig.annee}</p>
                             <p>Série : ${fig.serie}</p>
                             <p><strong>Prix :</strong> ${fig.prix} €</p>
-                            <p class="owner-status">${ownerText}</p>
                         </div>
                     `;
                 });

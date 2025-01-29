@@ -33,23 +33,5 @@ body {
 
 /* Styles pour les figurines que tu ne possèdes pas */
 .card.not-owned .figure-image {
-    filter: blur(5px); /* Appliquer un flou de 5px aux images non possédées */
-}
-
-.owner-status {
-    font-size: 14px;
-    font-weight: bold;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-/* Texte indiquant si la figurine est disponible ou non */
-.card.not-owned .owner-status {
-    color: red;
-}
-
-.card.owned .owner-status {
-    color: green;
+    filter: blur(3px); /* Appliquer un flou de 5px aux images non possédées */
 }
