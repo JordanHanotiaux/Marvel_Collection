@@ -6,6 +6,7 @@
       "serie": "Avengers",
       "exclusivite": "Non",
       "prix": 0.0,
+      "BAF": "The Void",
       "image": "images/vision_void.jpg"
     },
     {
@@ -15,6 +16,7 @@
       "serie": "Avengers",
       "exclusivite": "Non",
       "prix": 0.0,
+      "BAF": "The Void",
       "image": "images/namor_void.jpg"
     }
   ]
