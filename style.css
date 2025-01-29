@@ -10,6 +10,16 @@ body {
     gap: 20px;
 }
 
+#search {
+    margin-bottom: 30px; /* Augmente l'espace sous la barre de recherche */
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
 .card {
     width: 200px;
     border: 1px solid #ddd;
